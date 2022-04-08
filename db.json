@@ -1,0 +1,39 @@
+{
+
+  "posts": [
+    {
+      "name": "Amaan Khan",
+      "email": "amaanrkhan9@gmail.com",
+      "phone": "4543753743275",
+      "message": "ascfasfcasdasd",
+      "technologies": [
+        false,
+        true,
+        false
+      ],
+      "id": 2
+    },
+    {
+      "name": "hattori hanzo",
+      "email": "hanttorihanzo@gmail.com",
+      "phone": "456123987",
+      "message": "where's my sword???!!!",
+      "technologies": {
+        "0": false,
+        "1": false,
+        "2": true
+      },
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

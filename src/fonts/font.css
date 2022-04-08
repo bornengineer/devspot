@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Medium;
+  src: url(../fonts/madetommy/mt-medium.ttf);
+}
+@font-face {
+  font-family: Thin;
+  src: url(../fonts/madetommy/mt-thin.ttf);
+}
+@font-face {
+  font-family: Regular;
+  src: url(../fonts/madetommy/mt-regular.ttf);
+}
