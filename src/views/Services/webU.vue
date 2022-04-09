@@ -5,7 +5,7 @@
   <hamburger />
   <mainhead
     image="services-main-image/web-gif-final.webp"
-    headingtext="Website development"
+    headingtext="Website Development"
     quote="Encanto remains the trusted partner to the global clientele. Our elite web development services become the cynosure of all eyes."
   />
   <whatisthis technology="Web Development" techdetail="Our expertise in web development thrives us to deliver quality web development products and services at an attractive cost. We provide development in a wide range of web development technology to satisfy clientele from around the globe. We don’t just make websites; our sole purpose remains to make a website that could generate business for the clients. We believe a good website is a gateway to opportunities that could do wonders for the client. We invest our best resources to design websites that are presentable, efficient, user-friendly, responsive, and result-oriented. Our web development process includes many stages, from a high degree approach, precise planning, necessary research, design, accurate layout, and testing. We have set a thorough and professional approach to provide clarity and transparency without any misleading promises." />

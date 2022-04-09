@@ -1,15 +1,17 @@
 <template>
   <div class="containerr">
     <div  class="d-flex justify-content-center align-items-center">
-      <h1 data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" class="row1 d-flex justify-content-start align-items-start">
-        What We Do
-         ?
-      </h1>
+      <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" class="row1 d-flex justify-content-start align-items-start">
+        <div class="h1">
+          What We Do
+           ?
+        </div>
+      </div>
     </div>
     <div class="row2 d-flex justify-content-center align-item-center">
-      <h2 data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" >
+      <h3 data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" >
         {{techdetail}}
-      </h2>
+      </h3>
     </div>
   </div>
 </template>
@@ -37,14 +39,14 @@ export default {
   width: 70vw;
 }
 
-h1 {
+.row1 .h1 {
   width: 70vw;
-  color: rgb(255, 255, 255);
+  color: #00000099;
   text-align: left;
   font-weight: bold;
 }
 
-h2 {
+h3 {
   width: 70vw;
   color: rgb(58, 58, 58);
   padding: 0;
@@ -55,11 +57,11 @@ h2 {
   .row1 {
   width: 65vw;
 }
-h1 {
+.row1 .h1 {
   width: 65vw;
 }
 
-h2 {
+h3 {
   width: 65vw;
 }
 }
@@ -67,11 +69,11 @@ h2 {
   .row1 {
   width: 72vw;
 }
-h1 {
+.row1 .h1 {
   width: 72vw;
 }
 
-h2 {
+h3 {
   width: 72vw;
 }
 }
@@ -79,11 +81,11 @@ h2 {
   .row1 {
   width: 80vw;
 }
-h1 {
+.row1 .h1 {
   width: 80vw;
 }
 
-h2 {
+h3 {
   width: 80vw;
 }
 }
@@ -91,11 +93,11 @@ h2 {
     .row1 {
   margin:0 10px;
 }
-h1 {
+.row1 .h1 {
   width: 80vw;
 }
 
-h2 {
+h3 {
   width: 80vw;
   font-size: 16px;
 }

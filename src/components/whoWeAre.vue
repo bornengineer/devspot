@@ -13,18 +13,16 @@
     "
   >
     <div class="start d-flex flex-column align-items-center">
-      <h1 data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+      <h3 data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
         WHO WE ARE
-      </h1>
+      </h3>
       <br />
       <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
         {{ whoWeAreContent1 }}
       </p>
-      <!-- <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-        {{ whoWeAreContent2 }}
-      </p> -->
+
       <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-        {{ whoWeAreContent3 }}
+        {{ whoWeAreContent2 }}
       </p>
       <br />
       <div
@@ -38,7 +36,6 @@
             width: 100% !important;
             height: 100% !important;
             margin-top: -80px;
-            margin-left: 20px;
           "
           src="../assets/final-who-we-comp.webp"
           alt="gif"
@@ -62,11 +59,9 @@ export default {
   data() {
     return {
       whoWeAreContent1:
-        "We are a client-centric organization, committed to relentlessly working for the betterment of our clientele from around the globe. Client satisfaction remains our top priority and a cornerstone of our company values. We are among the top companies with the highest retention rates that distinguish us from other competitors. We strongly believe in the philosophy of making our customers happy. It rewarded us big time and encouraged us to serve our clientele more profoundly. Team Encanto Technologies has managed to bloom against all odds owing to the persistent efforts and dedication from our core team endeavoring the best deliverables to global clients.",
+        "We are a client-centric organization, committed to relentlessly working for the betterment of our clientele from around the globe. Our expertise in Web development, Mobile Application development, among other services attracted client’s from around the globe. Client satisfaction remains our top priority and a cornerstone of our company values. We are among the top companies with the highest retention rates that distinguish us from other competitors. We strongly believe in the philosophy of making our customers happy. It rewarded us big time and encouraged us to serve our clientele more profoundly. Team Encanto Technologies has managed to bloom against all odds owing to the persistent efforts and dedication of our core team endeavoring the best deliverables to global clients.",
       whoWeAreContent2:
-        "Team Encanto Technologies includes blend of young, expert, and enthusiastic engineers. We take immense pride in providing smart solutions through different mobile, web, and cloud services. We handle every client with utmost respect and generosity, turning their ideas into reality in the most fertile manner. We enjoy the finer detail of a project, considering every challenging phase from underpinning to success. We deliver more human-like and intuitive experiences, at every touch-point, for every customer to remain competitive.",
-      whoWeAreContent3:
-        "Encanto Technologies not only do magic with codes but also serve the best post-sale customer services. We don’t leave our clients in the lurch as our team gets rid of even the most complex issues at lightning speed. We have a dedicated team of experienced developers for resolving bugs, post-sale custom requirements, quick fixes, pushing new changes, among other services. Timely resolving client queries helped a lot in gaining clients’ trust and new references. We believe in creating a lasting impression with a firm belief in the “you grow, we grow” philosophy. We code, we value clients, we do wonders.",
+        "Encanto Technologies serves clients with the best Web Development, Mobile Application Development, among other services. We not only do magic with codes but also serve the best post-sale customer services. We don’t leave our clients in the lurch as our team gets rid of even the most complex issues at lightning speed. We have a dedicated team of experienced developers for resolving bugs, post-sale custom requirements, quick fixes, and pushing new changes, among other services. Timely resolving client queries helped a lot in gaining clients’ trust and new references. We believe in creating a lasting impression with a firm belief in the “you grow, we grow” philosophy. We Code, We Value Clients, We Do Wonder; as simple as that.",
     };
   },
   created() {
@@ -89,10 +84,10 @@ img {
 .start {
   width: 70vw;
 }
-.start h1 {
+.start h3 {
   font-weight: bold;
   font-size: 2.5rem;
-  color: rgb(255, 255, 255);
+  color: #00000099;
 }
 p {
   /* color: #0947a3; */
@@ -106,7 +101,7 @@ p {
   p {
     font-size: 1.2rem;
   }
-  .start h1 {
+  .start h3 {
     font-size: 2.2rem;
   }
   img {
@@ -124,7 +119,7 @@ p {
   p {
     font-size: 1.2rem;
   }
-  .start h1 {
+  .start h3 {
     font-size: 2rem;
   }
   .gif {
@@ -143,7 +138,7 @@ p {
   p {
     font-size: 1.2rem;
   }
-  .start h1 {
+  .start h3 {
     font-size: 1.8rem;
   }
   .gif {
@@ -158,7 +153,7 @@ p {
   p {
     font-size: 1rem;
   }
-  .start h1 {
+  .start h3 {
     font-size: 1.6rem;
   }
   .gif img {

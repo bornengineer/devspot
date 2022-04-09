@@ -1,6 +1,6 @@
 <template>
   <!-- all the things on home page are displayed here -->
-  <preloader />
+  <!-- <preloader /> -->
   <navbar />
   <socialIcons />
   <contactSidebar />
@@ -29,7 +29,7 @@ import domains from "@/components/domains.vue";
 import navbar from "@/components/navbar.vue";
 import socialIcons from "@/components/socialIcons.vue";
 import contactSidebar from "@/components/contactSidebar.vue";
-import preloader from "@/components/preloader.vue";
+// import preloader from "@/components/preloader.vue";
 
 export default {
   name: "Home",
@@ -46,7 +46,7 @@ export default {
     navbar,
     socialIcons,
     contactSidebar,
-    preloader,
+    // preloader,
   },
 };
 </script>

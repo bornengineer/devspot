@@ -1,8 +1,8 @@
 <template>
   <div data-aos="fade" class="service-container">
-    <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+    <h3 class="text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
       WHAT WE DO
-    </h1>
+    </h3>
     <div class="towrap d-flex align-items-center justify-content-center">
       <div
         class="
@@ -32,7 +32,7 @@
             >
               <div class="overlay"></div>
               <img :src="item.img" alt="img" cover />
-              <h1>{{ item.title }}</h1>
+              <h2>{{ item.title }}</h2>
             </div>
           </router-link>
         </div>
@@ -139,7 +139,7 @@ export default {
 </script>
 
 <style scoped>
-.service-container .row .service-card h1 {
+.service-container .row .service-card h2 {
   text-transform: uppercase;
   position: absolute;
   transition: all 0.2s ease-in-out;
@@ -147,12 +147,13 @@ export default {
   z-index: -10;
   width: 210px;
   font-size: 1.5rem;
+  font-weight: bold;
   color: rgba(255, 255, 255, 0) !important;
 }
-.service-container h1 {
+.service-container h3 {
   font-weight: bold;
   font-size: 2.5rem;
-  color: rgb(255, 255, 255);
+  color: #00000099;
 }
 
 .service-container {
@@ -195,7 +196,7 @@ img {
 .service-container .row .service-card:hover .overlay {
   background-color: rgba(31, 30, 27, 0.7);
 }
-.service-container .row .service-card:hover h1 {
+.service-container .row .service-card:hover h2 {
   z-index: 1000;
   color: rgba(255, 255, 255, 1) !important;
 }
@@ -205,27 +206,27 @@ img {
 }
 
 @media (max-width: 991px) {
-  .service-container h1 {
+  .service-container h3 {
     font-size: 2.2rem;
   }
 }
 @media (max-width: 767px) {
-  .service-container h1 {
+  .service-container h3 {
     font-size: 2rem;
   }
 }
 @media (max-width: 575px) {
-  .service-container h1 {
+  .service-container h3 {
     font-size: 1.8rem;
   }
 }
 @media (max-width: 499px) {
-  .service-container h1 {
+  .service-container h3 {
     font-size: 1.6rem;
   }
 
   /* here I m manipulating the look acc to mobile screens */
-  .service-container .row .service-card h1 {
+  .service-container .row .service-card h2 {
     color: rgb(59, 59, 59) !important;
     z-index: 1000;
     transform: scale(0.6) translateY(140%);
@@ -242,7 +243,7 @@ img {
   .service-container .row .service-card:hover .overlay {
     background-color: rgba(54, 53, 52, 0);
   }
-  .service-container .row .service-card:hover h1 {
+  .service-container .row .service-card:hover h2 {
     z-index: 1000;
     color: rgb(59, 59, 59) !important;
     transform: scale(0.6) translateY(140%);

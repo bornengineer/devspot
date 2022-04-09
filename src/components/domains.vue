@@ -10,14 +10,14 @@
       align-items-center
     "
   >
-    <h1
+    <h4
       data-aos="fade-up"
       data-aos-delay="200"
       data-aos-duration="600"
       class="text-center"
     >
       DOMAINS WE HAVE WORKED FOR
-    </h1>
+    </h4>
     <div class="domains d-flex flex-wrap justify-content-center">
       <span
         v-for="(item, i) in items"
@@ -61,7 +61,7 @@
               :src="item.image"
               :alt="item.domain.slice(0, 7)"
             />
-            <h4>{{ item.domain }}</h4>
+            <h3>{{ item.domain }}</h3>
           </div>
 
           <div
@@ -79,7 +79,7 @@
               :src="item.image"
               :alt="item.domain.slice(0, 10)"
             />
-            <h4>{{ item.domain }}</h4>
+            <h3>{{ item.domain }}</h3>
           </div>
         </div></span
       >
@@ -155,24 +155,24 @@ export default {
   filter: invert(1);
   z-index: 10;
 }
-.domain-container:hover h4 {
+.domain-container:hover h3 {
   background-color: #ffffff;
 }
 .containerr {
   min-height: 60vh;
   margin: 0px 0;
 }
-.containerr h1 {
+.containerr h4 {
   font-weight: bold;
   font-size: 2.5rem;
-  color: rgb(255, 255, 255);
+  color: #00000099;
   margin-bottom: 30px;
   width: 80%;
 }
 
 /* earlier i was giving the domains text a gradient,
  but layer i had to remove and I implemented the new one in old class */
-.gradient-text h4 {
+.gradient-text h3 {
   background-color: red;
 
   /* Create the gradient. */
@@ -190,7 +190,7 @@ export default {
   -moz-text-fill-color: transparent;
 }
 
-span h4 {
+span h3 {
   margin: 1rem 0.5rem;
   font-size: 1rem;
   font-weight: bold;
@@ -211,7 +211,7 @@ span h4 {
   .domains {
     width: 600px;
   }
-  .containerr h1 {
+  .containerr h4 {
     font-size: 2.2rem;
   }
 }
@@ -222,7 +222,7 @@ span h4 {
   .domains {
     width: 83vw;
   }
-  .containerr h1 {
+  .containerr h4 {
     font-size: 2rem;
   }
 }
@@ -239,7 +239,7 @@ span h4 {
   .domains {
     width: 87vw;
   }
-  .containerr h1 {
+  .containerr h4 {
     font-size: 1.8rem;
   }
   img {
@@ -253,7 +253,7 @@ span h4 {
   .domains {
     width: 90vw;
   }
-  .containerr h1 {
+  .containerr h4 {
     font-size: 1.6rem;
     width: 80vw;
   }

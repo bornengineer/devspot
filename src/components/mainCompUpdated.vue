@@ -23,6 +23,9 @@
         data-aos-duration="1000"
         class="gif d-flex flex-column justify-content-center align-items-center"
       >
+        <h1>
+          One Stop Solution for Mobile App Development and Web Development.
+        </h1>
         <img style="width: auto" src="../assets/maingiffinal.webp" />
       </div>
       <div
@@ -38,9 +41,9 @@
           text-center
         "
       >
-        <h1 id="idea" class="my-2">IDEA</h1>
-        <h1 id="code" class="my-2">CODE</h1>
-        <h1 id="reality" class="my-2">REALITY</h1>
+        <div id="idea" class="my-2 ideacode">IDEA</div>
+        <div id="code" class="my-2 ideacode">CODE</div>
+        <div id="reality" class="my-2 ideacode">REALITY</div>
         <div class="fixed-animation">
           <div class="dotbox1">
             <div class="dot1"></div>
@@ -305,7 +308,7 @@ export default {
     -moz-text-fill-color: transparent;
   }
   100% {
-    background: -webkit-gradient(linear,45deg, #0947a3, #ee2f45);
+    background: -webkit-gradient(linear, 45deg, #0947a3, #ee2f45);
     background: linear-gradient(45deg, #0947a3, #ee2f45);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -323,7 +326,6 @@ export default {
 #reality {
   animation: reality-ani 4.5s infinite ease-in;
 }
-
 
 /* animation for dots */
 @keyframes dot1move {
@@ -484,6 +486,14 @@ export default {
   }
 }
 
+.gif h1 {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center !important;
+  width: 80%;
+}
+
 .dot1 {
   height: 15px;
   width: 15px;
@@ -508,7 +518,6 @@ export default {
   background-color: rgba(46, 43, 43, 0.5);
   border: 2px solid #0947a3;
 }
-
 
 /* 2 dotboxes are used to make the animation */
 .dotbox1 {
@@ -565,6 +574,7 @@ export default {
 .gif {
   width: 50vw;
   height: 80vh;
+  margin-top: -80px;
 }
 img {
   height: 20vw;
@@ -574,9 +584,10 @@ img {
   width: 50vw;
   height: 80vh;
 }
-h1 {
+.heading .ideacode {
   font-weight: 700;
   font-size: 70px;
+  margin: 0px 0px !important;
 }
 p {
   color: #0947a3;
@@ -592,29 +603,40 @@ p {
   img {
     height: 25vw;
     width: 25vw;
-    margin-left:-40px;
-    margin-right:40px;
+    margin-left: -40px;
+    margin-right: 40px;
   }
   .heading {
-    transform: scale(0.90) !important;
+    transform: scale(0.9) !important;
+  }
+  .gif h1 {
+    margin-left: -40px;
+    margin-right: 40px;
+    width: 90%;
   }
 }
 @media (max-width: 767px) {
   .containerr {
-    height:700px !important;
+    height: 700px !important;
     margin-bottom: 80px !important;
   }
   img {
     height: 40vw;
     width: 40vw;
-     margin-left:0px;
-    margin-right:0px;
-    margin-bottom:20px;
-  } 
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
 
   .heading {
     margin-right: 0 !important;
     transform: scale(0.9) !important;
+  }
+  .gif h1 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 100px;
+    width:140%;
   }
   .gif {
     margin-top: 90px;
@@ -633,6 +655,12 @@ p {
   .gif {
     margin-top: 90px;
   }
+    .gif h1 {
+    width:160%;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+       margin-top: 20px;
+  }    
 }
 @media (max-width: 499px) {
   p {
@@ -642,5 +670,9 @@ p {
     margin-right: 0 !important;
     transform: scale(0.75) !important;
   }
+      .gif h1 {
+    width:155%;
+    font-size: 1.2rem;
+  }  
 }
 </style>

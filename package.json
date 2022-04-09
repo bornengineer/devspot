@@ -19,6 +19,7 @@
     "particles.js": "^2.0.0",
     "particles.vue3": "^1.41.0",
     "vue": "^3.2.29",
+    "vue-meta": "^2.4.0",
     "vue-parallaxy": "^1.1.1",
     "vue-router": "^4.0.0-0",
     "vue-tilt.js": "^1.1.1",
@@ -37,7 +38,8 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.0.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "sitemap-webpack-plugin": "^1.1.1"
   },
   "eslintConfig": {
     "root": true,

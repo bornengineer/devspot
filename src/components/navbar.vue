@@ -8,8 +8,8 @@
       <!-- moveup method is used to move to the top on the page we are going to-->
       <router-link class="me-5" @click="moveUp" to="/">
         <img
-          style="height: 50px !important"
-          src="../../public/logo-final.png"
+          style="height: 60px !important"
+          src="../../public/logo.webp"
           alt="logo"
         />
       </router-link>

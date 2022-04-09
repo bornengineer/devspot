@@ -17,7 +17,7 @@
           <div style="width: 100%" class="d-flex flex-column">
             <div class="d-flex flex-row mb-3 align-items-center">
               <img :src="item.icon" alt="icon" />
-              <h3>{{ item.heading }}</h3>
+              <h2>{{ item.heading }}</h2>
             </div>
             <p>
               {{ item.description }}
@@ -140,7 +140,7 @@ export default {
   -webkit-box-shadow: inset 0 0 6px rgba(37, 37, 37, 0.5);
 }
 
-.cardd h3 {
+.cardd h2 {
   width: 220px;
   margin: 0px 0px 0px 20px !important;
   color: #0947a3c5;
@@ -165,7 +165,7 @@ export default {
   .cardd p {
     width: 100%;
   }
-  .cardd h3 {
+  .cardd h2 {
     width: auto;
     margin: 0 0 0 10px !important;
   }
@@ -189,7 +189,7 @@ export default {
   .cardd p {
     width: 110%;
   }
-  .cardd h3 {
+  .cardd h2 {
     width: auto;
     margin: 0 0 0 15px !important;
   }
@@ -217,7 +217,7 @@ export default {
   .cardd p {
     font-size: 14px;
   }
-  .cardd h3 {
+  .cardd h2 {
     font-size: 1.2rem;
   }
 }

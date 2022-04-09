@@ -9,7 +9,7 @@
       align-items-center
     "
   >
-    <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" >WHAT CLIENTS SAY</h1>
+    <h3 class="text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" >WHAT CLIENTS SAY</h3>
     <div class="d-flex justify-content-center">
       <div
         data-aos="flip-up"
@@ -251,10 +251,10 @@ export default {
 .containerr {
   margin: 20px 0 60px 0;
 }
-.containerr h1 {
+.containerr h3 {
   font-weight: bold;
   font-size: 2.5rem;
-  color: rgb(255, 255, 255);
+  color: #00000099;
   margin-bottom: 30px;
   width: 90%;
 }
@@ -317,7 +317,7 @@ export default {
     max-width: 45vw;
     padding-top: 25px;
   }
-  .containerr h1 {
+  .containerr h3 {
     font-size: 2.2rem;
   }
 }
@@ -333,7 +333,7 @@ export default {
     max-width: 50vw;
     padding-top: 20px;
   }
-  .containerr h1 {
+  .containerr h3 {
     font-size: 2rem;
   }
   .details p{
@@ -382,7 +382,7 @@ export default {
   .details {
     margin-left: 20px;
   }
-  .containerr h1 {
+  .containerr h3 {
     font-size: 1.8rem;
   }
 }
@@ -396,7 +396,7 @@ export default {
     height: 550px;
     width: 88vw;
   }
-  .containerr h1 {
+  .containerr h3 {
     font-size: 1.6rem;
   }
   .details p{

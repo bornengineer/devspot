@@ -55,7 +55,7 @@
               opacity: 1;
               margin-top: -100px;
             "
-            src="../assets/about-page/about-us-02.png"
+            src="../assets/about-page/about-us-02.webp"
             alt=""
           />
           <img
@@ -68,7 +68,7 @@
               opacity: 1;
               margin-top: -100px;
             "
-            src="../assets/about-page/about-us-01.png"
+            src="../assets/about-page/about-us-01.webp"
             alt=""
           />
         </div>
