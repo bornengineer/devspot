@@ -3,6 +3,52 @@
   <socialIcons />
   <hamburger />
   <particles />
+    <transition name="fade-modal">
+    <!-- this mask fades the bg to highlight the form -->
+    <div v-show="bool" class="mask fixed-top">
+      <div
+        class="formm d-flex justify-content-start align-items-center flex-column"
+      >
+        <div
+          class="
+            modal-head
+            d-flex
+            align-items-center
+            justify-content-end
+            flex-column
+          "
+        >
+          <h2 style="margin-top: 100px; margin-bottom: 20px">
+            Response Recorded
+          </h2>
+          <img
+            style="height: 50px; margin-bottom: 90px"
+            src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif"
+            alt="tick"
+          />
+          <!-- this is the modal closing button -->
+          <button
+            @click="bool = false"
+            style="
+              height: 30px;
+              width: 30px;
+              font-size: 30px;
+              font-weight: 700;
+              position: absolute;
+              right: 25px;
+              top: 15px;
+              padding: 0;
+              margin: 0;
+              border: none;
+              background: transparent;
+            "
+          >
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+  </transition>
 
   <h1>Contact us</h1>
   <div class="container-fluid d-flex justify-content-center form">
@@ -97,7 +143,7 @@
             type="checkbox"
             value=""
             id="technologies"
-            v-model="formData.technologies[0]"
+            v-model="formData.service.web"
           />
           <label
             v-bind:style="{
@@ -117,7 +163,7 @@
             type="checkbox"
             value=""
             id="mobile"
-            v-model="formData.technologies[1]"
+            v-model="formData.service.app"
           />
           <label
             v-bind:style="{
@@ -137,7 +183,7 @@
             type="checkbox"
             value=""
             id="desktop"
-            v-model="formData.technologies[2]"
+            v-model="formData.service.desktop"
           />
           <label
             v-bind:style="{
@@ -156,8 +202,8 @@
             class="form-check-input"
             type="checkbox"
             value=""
-            id="desktop"
-            v-model="formData.technologies[3]"
+            id="cloud"
+            v-model="formData.service.cloud"
           />
           <label
             v-bind:style="{
@@ -176,8 +222,8 @@
             class="form-check-input"
             type="checkbox"
             value=""
-            id="desktop"
-            v-model="formData.technologies[4]"
+            id="devops"
+            v-model="formData.service.devops"
           />
           <label
             v-bind:style="{
@@ -196,8 +242,8 @@
             class="form-check-input"
             type="checkbox"
             value=""
-            id="desktop"
-            v-model="formData.technologies[5]"
+            id="bigdata"
+            v-model="formData.service.bigdata"
           />
           <label
             v-bind:style="{
@@ -247,6 +293,8 @@ export default {
   },
   data() {
     return {
+      bool : false,
+
       isActive1: true,
       isActive2: true,
       isActive3: true,
@@ -254,6 +302,7 @@ export default {
       isActive5: true,
       isActive6: true,
 
+// ignore this data
       web: false,
       app: false,
       desktop: false,
@@ -266,7 +315,14 @@ export default {
         email: "",
         phone: "",
         message: "",
-        technologies: {},
+        service: {
+          web: "",
+          app: "",
+          desktop: "",
+          cloud: "",
+          devops: "",
+          bigdata: "",
+        },
       },
     };
   },
@@ -306,13 +362,22 @@ export default {
 
     // sending form data by axios
     sendData() {
+      setTimeout(() => {this.bool = true;}, 2000)
+      
+      console.log(this.formData);
       axios
         .post("https://api.omrdigital.com/contact", this.formData)
-        .then((response) => console.log(response))
-        .catch((error) => console.log(error));
+        .then((response) => console.warn(response.data))
+        .catch((error) =>
+          console.warn(
+            "Error Is",
+            error,
+            error?.response?.data,
+            error?.response
+          )
+        );
 
-      // window.alert("Your response has been recorded!")
-
+      // window.alert("Your response has been recorded!");
     },
   },
 };
@@ -440,6 +505,9 @@ label {
   margin: 0;
 }
 
+.small {
+  transform: scale(0.5);
+}
 button {
   transition: all 0.5s ease;
   background-color: rgba(0, 0, 0, 0.2);
@@ -452,7 +520,35 @@ button:hover {
   border: 2px solid rgba(0, 0, 0, 0.5);
   color: rgba(0, 0, 0, 1);
 }
-.small {
-  transform: scale(0.5);
+
+
+/* modal */
+.formm {
+  width: 55vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+}
+
+.mask {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.55);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fade-modal-enter-active,
+.fade-modal-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+.fade-modal-enter-from,
+.fade-modal-leave-to {
+  opacity: 0;
 }
 </style>

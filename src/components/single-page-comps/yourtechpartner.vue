@@ -1,4 +1,57 @@
 <template>
+  <transition name="fade-modal">
+    <!-- this mask fades the bg to highlight the form -->
+    <div v-show="bool" class="mask fixed-top">
+      <div
+        class="
+          formm
+          d-flex
+          justify-content-start
+          align-items-center
+          flex-column
+        "
+      >
+        <div
+          class="
+            modal-head
+            d-flex
+            align-items-center
+            justify-content-end
+            flex-column
+          "
+        >
+          <h2 style="margin-top: 100px; margin-bottom: 20px">
+            Response Recorded
+          </h2>
+          <img
+            style="height: 50px; margin-bottom: 90px"
+            src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif"
+            alt="tick"
+          />
+          <!-- this is the modal closing button -->
+          <button
+            @click="bool = false"
+            style="
+              height: 30px;
+              width: 30px;
+              font-size: 30px;
+              font-weight: 700;
+              position: absolute;
+              right: 25px;
+              top: 15px;
+              padding: 0;
+              margin: 0;
+              border: none;
+              background: transparent;
+            "
+          >
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+  </transition>
+
   <div
     class="
       containerr
@@ -24,7 +77,9 @@
         "
         class="form d-flex justify-content-start align-items-center flex-column"
       >
-        <h2 style="margin: 25px 0px; text-align:center;">Let’s Scale Your Brand, Together</h2>
+        <h2 style="margin: 25px 0px; text-align: center">
+          Let’s Scale Your Brand, Together
+        </h2>
         <form
           class="
             d-flex
@@ -86,7 +141,7 @@
             ></textarea>
           </div>
           <div
-            style="height: 150px"
+          style="height:150px;"
             class="
               mb-4
               toggles
@@ -94,12 +149,7 @@
               d-flex
               align-items-center
               justify-content-center
-              flex-xxl-row
-              flex-xl-row
-              flex-lg-row
-              flex-md-column
-              flex-sm-column
-              flex-column
+              flex-row
             "
           >
             <div class="form-check">
@@ -108,7 +158,7 @@
                 type="checkbox"
                 value=""
                 id="technologies"
-                v-model="formData.technologies[0]"
+                v-model="formData.service.web"
               />
               <label
                 v-bind:style="{
@@ -128,7 +178,7 @@
                 type="checkbox"
                 value=""
                 id="mobile"
-                v-model="formData.technologies[1]"
+                v-model="formData.service.app"
               />
               <label
                 v-bind:style="{
@@ -148,7 +198,7 @@
                 type="checkbox"
                 value=""
                 id="desktop"
-                v-model="formData.technologies[2]"
+                v-model="formData.service.desktop"
               />
               <label
                 v-bind:style="{
@@ -167,8 +217,8 @@
                 class="form-check-input"
                 type="checkbox"
                 value=""
-                id="desktop"
-                v-model="formData.technologies[3]"
+                id="cloud"
+                v-model="formData.service.cloud"
               />
               <label
                 v-bind:style="{
@@ -187,8 +237,8 @@
                 class="form-check-input"
                 type="checkbox"
                 value=""
-                id="desktop"
-                v-model="formData.technologies[4]"
+                id="devops"
+                v-model="formData.service.devops"
               />
               <label
                 v-bind:style="{
@@ -207,8 +257,8 @@
                 class="form-check-input"
                 type="checkbox"
                 value=""
-                id="desktop"
-                v-model="formData.technologies[5]"
+                id="bigdata"
+                v-model="formData.service.bigdata"
               />
               <label
                 v-bind:style="{
@@ -246,7 +296,7 @@
               font-weight: bold;
               margin-top: -40px;
               margin-bottom: 40px;
-              text-align:center;
+              text-align: center;
             "
             class="section-title text-left"
           >
@@ -293,16 +343,20 @@ export default {
   created() {
     AOS.init();
   },
-  name: "mainCompUpdated",
+  name: "yourtechpartner",
   props: {},
   data() {
     return {
+      bool: false,
+
       isActive1: true,
       isActive2: true,
       isActive3: true,
       isActive4: true,
       isActive5: true,
       isActive6: true,
+
+      // ignore this data
       web: false,
       app: false,
       desktop: false,
@@ -315,11 +369,20 @@ export default {
         email: "",
         phone: "",
         message: "",
-        technologies: {},
+        service: {
+          web: "",
+          app: "",
+          desktop: "",
+          cloud: "",
+          devops: "",
+          bigdata: "",
+        },
       },
     };
   },
+
   methods: {
+    // these methods fire each time we click & unclick a service checkbox
     toggleClass1: function () {
       this.isActive1 = !this.isActive1;
       this.web = !this.web;
@@ -350,11 +413,27 @@ export default {
       this.bigdata = !this.bigdata;
       // console.log(`Desktop:${this.desktop}`);
     },
+
+    // sending form data by axios
     sendData() {
+      setTimeout(() => {
+        this.bool = true;
+      }, 2000);
+
+      console.log(this.formData);
       axios
-        .post("https://api.omrdigital.com/contact-us", this.formData)
-        .then((response) => console.log(response.data))
-        .catch((error) => console.log(error));
+        .post("https://api.omrdigital.com/contact", this.formData)
+        .then((response) => console.warn(response.data))
+        .catch((error) =>
+          console.warn(
+            "Error Is",
+            error,
+            error?.response?.data,
+            error?.response
+          )
+        );
+
+      // window.alert("Your response has been recorded!");
     },
   },
 };
@@ -564,8 +643,8 @@ button:hover {
     height: 160px !important;
     padding-left: 0rem !important;
   }
-  .form-check{
-    padding-left:.5rem !important;
+  .form-check {
+    padding-left: 0.5rem !important;
   }
   .section-theme {
     width: 65vw;
@@ -582,14 +661,14 @@ button:hover {
     height: 160px !important;
     padding-left: 0rem !important;
   }
-  .form-check{
-    padding-left:.5rem !important;
+  .form-check {
+    padding-left: 0.5rem !important;
   }
   .section-theme {
-    width:75vw;
+    width: 75vw;
   }
   .form {
-    width:80vw !important;
+    width: 80vw !important;
   }
 }
 @media (max-width: 500px) {
@@ -600,20 +679,50 @@ button:hover {
     height: 260px !important;
     padding-left: 0rem !important;
   }
-  .form-check{
-    padding-left:.5rem !important;
+  .form-check {
+    padding-left: 0.5rem !important;
   }
   .section-theme {
-    width:90vw;
+    width: 90vw;
   }
   .form {
-    width:96vw !important;
+    width: 96vw !important;
     margin: 0px 10px 20px 10px !important;
   }
   .talent-gap-typographic .digits {
-  font-size: 60px;
-  font-weight: 700;
-  margin-right: 16px;
+    font-size: 60px;
+    font-weight: 700;
+    margin-right: 16px;
+  }
 }
+
+/* modal */
+.formm {
+  width: 55vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+}
+
+.mask {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.55);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fade-modal-enter-active,
+.fade-modal-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+.fade-modal-enter-from,
+.fade-modal-leave-to {
+  opacity: 0;
 }
 </style>

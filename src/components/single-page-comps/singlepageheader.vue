@@ -1,4 +1,57 @@
 <template>
+  <transition name="fade-modal">
+    <!-- this mask fades the bg to highlight the form -->
+    <div v-show="bool" class="mask fixed-top">
+      <div
+        class="
+          formm
+          d-flex
+          justify-content-start
+          align-items-center
+          flex-column
+        "
+      >
+        <div
+          class="
+            modal-head
+            d-flex
+            align-items-center
+            justify-content-end
+            flex-column
+          "
+        >
+          <h2 style="margin-top: 100px; margin-bottom: 20px">
+            Response Recorded
+          </h2>
+          <img
+            style="height: 50px; margin-bottom: 90px"
+            src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif"
+            alt="tick"
+          />
+          <!-- this is the modal closing button -->
+          <button
+            @click="bool = false"
+            style="
+              height: 30px;
+              width: 30px;
+              font-size: 30px;
+              font-weight: 700;
+              position: absolute;
+              right: 25px;
+              top: 15px;
+              padding: 0;
+              margin: 0;
+              border: none;
+              background: transparent;
+            "
+          >
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+  </transition>
+
   <div
     class="
       containerr
@@ -26,7 +79,9 @@
         text-center
       "
     >
-      <h2 style="margin-bottom: 40px">Grow your business by  <span style="font-weight:900;">2X</span></h2>
+      <h2 style="margin-bottom: 40px">
+        Grow your business by <span style="font-weight: 900">2X</span>
+      </h2>
       <img src="../../assets/maingiffinal.webp" alt="" />
     </div>
 
@@ -44,7 +99,8 @@
           d-flex
           justify-content-end
           flex-column
-          col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-10 col-10 py-4
+          col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-10 col-10
+          py-4
         "
         method="post"
       >
@@ -107,12 +163,7 @@
             d-flex
             align-items-center
             justify-content-center
-            flex-xxl-row
-            flex-xl-row
-            flex-lg-row
-            flex-md-row
-            flex-sm-row
-            flex-column
+            flex-row
           "
         >
           <div class="form-check">
@@ -121,7 +172,7 @@
               type="checkbox"
               value=""
               id="technologies"
-              v-model="formData.technologies[0]"
+              v-model="formData.service.web"
             />
             <label
               v-bind:style="{
@@ -141,7 +192,7 @@
               type="checkbox"
               value=""
               id="mobile"
-              v-model="formData.technologies[1]"
+              v-model="formData.service.app"
             />
             <label
               v-bind:style="{
@@ -161,11 +212,11 @@
               type="checkbox"
               value=""
               id="desktop"
-              v-model="formData.technologies[2]"
+              v-model="formData.service.desktop"
             />
             <label
               v-bind:style="{
-                'background-color': isActive3 ? 'transparent' : '#00000020',
+                'background-color': isActive3 ? '#00000020':'transparent',
                 color: isActive3 ? '#ffffff90' : '#494848',
               }"
               @click="toggleClass3()"
@@ -180,8 +231,8 @@
               class="form-check-input"
               type="checkbox"
               value=""
-              id="desktop"
-              v-model="formData.technologies[3]"
+              id="cloud"
+              v-model="formData.service.cloud"
             />
             <label
               v-bind:style="{
@@ -200,8 +251,8 @@
               class="form-check-input"
               type="checkbox"
               value=""
-              id="desktop"
-              v-model="formData.technologies[4]"
+              id="devops"
+              v-model="formData.service.devops"
             />
             <label
               v-bind:style="{
@@ -220,8 +271,8 @@
               class="form-check-input"
               type="checkbox"
               value=""
-              id="desktop"
-              v-model="formData.technologies[5]"
+              id="bigdata"
+              v-model="formData.service.bigdata"
             />
             <label
               v-bind:style="{
@@ -261,12 +312,16 @@ export default {
   props: {},
   data() {
     return {
+      bool: false,
+
       isActive1: true,
       isActive2: true,
       isActive3: true,
       isActive4: true,
       isActive5: true,
       isActive6: true,
+
+      // ignore this data
       web: false,
       app: false,
       desktop: false,
@@ -279,11 +334,20 @@ export default {
         email: "",
         phone: "",
         message: "",
-        technologies: {},
+        service: {
+          web: "",
+          app: "",
+          desktop: "",
+          cloud: "",
+          devops: "",
+          bigdata: "",
+        },
       },
     };
   },
+
   methods: {
+    // these methods fire each time we click & unclick a service checkbox
     toggleClass1: function () {
       this.isActive1 = !this.isActive1;
       this.web = !this.web;
@@ -314,11 +378,27 @@ export default {
       this.bigdata = !this.bigdata;
       // console.log(`Desktop:${this.desktop}`);
     },
+
+    // sending form data by axios
     sendData() {
+      setTimeout(() => {
+        this.bool = true;
+      }, 2000);
+
+      console.log(this.formData);
       axios
-        .post("https://api.omrdigital.com/contact-us", this.formData)
-        .then((response) => console.log(response.data))
-        .catch((error) => console.log(error));
+        .post("https://api.omrdigital.com/contact", this.formData)
+        .then((response) => console.warn(response.data))
+        .catch((error) =>
+          console.warn(
+            "Error Is",
+            error,
+            error?.response?.data,
+            error?.response
+          )
+        );
+
+      // window.alert("Your response has been recorded!");
     },
   },
 };
@@ -515,5 +595,35 @@ button:hover {
   .form {
     width: 94vw;
   }
+}
+
+/* modal */
+.formm {
+  width: 55vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+}
+
+.mask {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.55);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fade-modal-enter-active,
+.fade-modal-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+.fade-modal-enter-from,
+.fade-modal-leave-to {
+  opacity: 0;
 }
 </style>

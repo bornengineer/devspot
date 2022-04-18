@@ -1,5 +1,57 @@
 <template>
-  <!-- this one's used for the social-icons -->
+  <transition name="fade-modal">
+    <!-- this mask fades the bg to highlight the form -->
+    <div style="z-index:1000000 !important;" v-show="bool" class="mask fixed-top">
+      <div
+        class="
+          formm
+          d-flex
+          justify-content-start
+          align-items-center
+          flex-column
+        "
+      >
+        <div
+          class="
+            modal-head
+            d-flex
+            align-items-center
+            justify-content-end
+            flex-column
+          "
+        >
+          <h2 style="margin-top: 100px; margin-bottom: 20px">
+            Response Recorded
+          </h2>
+          <img
+            style="height: 50px; margin-bottom: 90px"
+            src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif"
+            alt="tick"
+          />
+          <!-- this is the modal closing button -->
+          <button
+            @click="bool = false"
+            style="
+              height: 30px;
+              width: 30px;
+              font-size: 30px;
+              font-weight: 700;
+              position: absolute;
+              right: 25px;
+              top: 15px;
+              padding: 0;
+              margin: 0;
+              border: none;
+              background: transparent;
+            "
+          >
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+  </transition>
+
   <div
     @click="openForm()"
     class="container-i fixed-top disable-select"
@@ -102,137 +154,137 @@
 
           <!-- using user-select: none; to disable text selection on certain pages -->
           <div
-            class="
-              mb-4
-              toggles
-              disable-select
-              d-flex
-              align-items-center
-              justify-content-center
-              flex-xxl-row
-            "
+        class="
+          mb-4
+          toggles
+          disable-select
+          d-flex
+          align-items-center
+          justify-content-center
+          flex-row
+        "
+      >
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="technologies"
+            v-model="formData.service.web"
+          />
+          <label
+            v-bind:style="{
+              'background-color': isActive1 ? 'transparent' : '#00000060',
+              color: isActive1 ? '#ffffff90' : '#494848',
+            }"
+            @click="toggleClass1()"
+            class="form-check-label"
+            for="technologies"
           >
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="technologies"
-                v-model="formData.technologies[0]"
-              />
-              <label
-                v-bind:style="{
-                  'background-color': isActive1 ? 'transparent' : '#00000066',
-                  color: isActive1 ? '#ffffff90' : '#494848',
-                }"
-                @click="toggleClass1()"
-                class="form-check-label"
-                for="technologies"
-              >
-                Website Development
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="mobile"
-                v-model="formData.technologies[1]"
-              />
-              <label
-                v-bind:style="{
-                  'background-color': isActive2 ? 'transparent' : '#00000066',
-                  color: isActive2 ? '#ffffff90' : '#494848',
-                }"
-                @click="toggleClass2()"
-                class="form-check-label"
-                for="mobile"
-              >
-                Mobile Application
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="desktop"
-                v-model="formData.technologies[2]"
-              />
-              <label
-                v-bind:style="{
-                  'background-color': isActive3 ? 'transparent' : '#00000066',
-                  color: isActive3 ? '#ffffff90' : '#494848',
-                }"
-                @click="toggleClass3()"
-                class="form-check-label"
-                for="desktop"
-              >
-                Desktop Application
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="desktop"
-                v-model="formData.technologies[3]"
-              />
-              <label
-                v-bind:style="{
-                  'background-color': isActive4 ? 'transparent' : '#00000066',
-                  color: isActive4 ? '#ffffff90' : '#494848',
-                }"
-                @click="toggleClass4()"
-                class="form-check-label"
-                for="cloud"
-              >
-                Cloud Development
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="desktop"
-                v-model="formData.technologies[4]"
-              />
-              <label
-                v-bind:style="{
-                  'background-color': isActive5 ? 'transparent' : '#00000066',
-                  color: isActive5 ? '#ffffff90' : '#494848',
-                }"
-                @click="toggleClass5()"
-                class="form-check-label"
-                for="devops"
-              >
-                Devops, CI/CD
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="desktop"
-                v-model="formData.technologies[5]"
-              />
-              <label
-                v-bind:style="{
-                  'background-color': isActive6 ? 'transparent' : '#00000066',
-                  color: isActive6 ? '#ffffff90' : '#494848',
-                }"
-                @click="toggleClass6()"
-                class="form-check-label"
-                for="bigdata"
-              >
-                Big Data Development
-              </label>
-            </div>
-          </div>
+            Website Development
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="mobile"
+            v-model="formData.service.app"
+          />
+          <label
+            v-bind:style="{
+              'background-color': isActive2 ? 'transparent' : '#00000060',
+              color: isActive2 ? '#ffffff90' : '#494848',
+            }"
+            @click="toggleClass2()"
+            class="form-check-label"
+            for="mobile"
+          >
+            Mobile Application
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="desktop"
+            v-model="formData.service.desktop"
+          />
+          <label
+            v-bind:style="{
+              'background-color': isActive3 ? 'transparent' : '#00000060',
+              color: isActive3 ? '#ffffff90' : '#494848',
+            }"
+            @click="toggleClass3()"
+            class="form-check-label"
+            for="desktop"
+          >
+            Desktop Application
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="cloud"
+            v-model="formData.service.cloud"
+          />
+          <label
+            v-bind:style="{
+              'background-color': isActive4 ? 'transparent' : '#00000060',
+              color: isActive4 ? '#ffffff90' : '#494848',
+            }"
+            @click="toggleClass4()"
+            class="form-check-label"
+            for="cloud"
+          >
+            Cloud Development
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="devops"
+            v-model="formData.service.devops"
+          />
+          <label
+            v-bind:style="{
+              'background-color': isActive5 ? 'transparent' : '#00000060',
+              color: isActive5 ? '#ffffff90' : '#494848',
+            }"
+            @click="toggleClass5()"
+            class="form-check-label"
+            for="devops"
+          >
+            Devops, CI/CD
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="bigdata"
+            v-model="formData.service.bigdata"
+          />
+          <label
+            v-bind:style="{
+              'background-color': isActive6 ? 'transparent' : '#00000060',
+              color: isActive6 ? '#ffffff90' : '#494848',
+            }"
+            @click="toggleClass6()"
+            class="form-check-label"
+            for="bigdata"
+          >
+            Big Data Development
+          </label>
+        </div>
+      </div>
           <button
             @click.prevent="sendData()"
             type="submit"
@@ -253,6 +305,8 @@ export default {
   data() {
     return {
       formActive: false,
+      bool : false,
+
       isActive1: true,
       isActive2: true,
       isActive3: true,
@@ -260,6 +314,7 @@ export default {
       isActive5: true,
       isActive6: true,
 
+// ignore this data
       web: false,
       app: false,
       desktop: false,
@@ -272,7 +327,14 @@ export default {
         email: "",
         phone: "",
         message: "",
-        technologies: {},
+        service: {
+          web: "",
+          app: "",
+          desktop: "",
+          cloud: "",
+          devops: "",
+          bigdata: "",
+        },
       },
     };
   },
@@ -316,10 +378,20 @@ export default {
 
     // sending form data by axios
     sendData() {
+      setTimeout(() => {this.bool = true;}, 2000)
+      
+      console.log(this.formData);
       axios
         .post("https://api.omrdigital.com/contact", this.formData)
-        .then((response) => console.log(response))
-        .catch((error) => console.log(error));
+        .then((response) => console.warn(response.data))
+        .catch((error) =>
+          console.warn(
+            "Error Is",
+            error,
+            error?.response?.data,
+            error?.response
+          )
+        );
 
       // window.alert("Your response has been recorded!");
     },
@@ -375,7 +447,7 @@ button {
 .toggles {
   padding-right: 1.5rem;
   flex-wrap: wrap;
-  line-height: .9rem;
+  line-height: 0.9rem;
 }
 .form-check-label {
   display: flex;
@@ -400,10 +472,10 @@ button {
   display: none;
 }
 h1 {
-  margin-top: 0px;
-  margin-bottom: 10px;
+  padding:10px;
+  margin-bottom: 50px;
   color: rgb(0, 0, 0);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -592,9 +664,39 @@ form button:hover {
   .sicons {
     top: 76%;
   }
-  .sicons{
-    width:34px;
-    padding:8px 0px;
+  .sicons {
+    width: 34px;
+    padding: 8px 0px;
   }
+}
+
+/* modal */
+.formm {
+  width: 55vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+}
+
+.mask {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.55);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fade-modal-enter-active,
+.fade-modal-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+.fade-modal-enter-from,
+.fade-modal-leave-to {
+  opacity: 0;
 }
 </style>
