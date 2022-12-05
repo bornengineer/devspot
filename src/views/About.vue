@@ -4,7 +4,7 @@
   <socialIcons />
   <hamburger />
   <particles />
-
+  <h1>Available Prototypes</h1>
   <div
     data-aos="fade"
     class="
@@ -16,287 +16,15 @@
       align-items-center
     "
   >
-    <div data-aos="fade" class="about d-flex align-items-center flex-column">
-      <div
-        class="about-banner--content d-flex align-items-center flex-column mt-5"
-      >
-        <h3
-          class=""
-          style="font-weight: bold"
-          data-aos="zoom-in"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-        >
-          About Us
-        </h3>
-        <h4
-          class=""
-          style="font-weight: bold; font-size: 2rem"
-          data-aos="zoom-in"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-        >
-          We, at Encanto Technologies, apply neuromarketing <br />
-          and behavioral science to design, digitize<br />
-          and grow your business.
-        </h4>
-
-        <div
-          data-aos="fade"
-          class="images d-flex justify-content-between align-items-end"
-        >
-          <img
-            data-aos="fade-right"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-            style="
-              height: 260px !important ;
-              margin-left: 80px;
-              opacity: 1;
-              margin-top: -100px;
-            "
-            src="../assets/about-page/about-us-02.webp"
-            alt=""
-          />
-          <img
-            data-aos="fade-left"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-            style="
-              height: 280px !important ;
-              margin-right: 80px;
-              opacity: 1;
-              margin-top: -100px;
-            "
-            src="../assets/about-page/about-us-01.webp"
-            alt=""
-          />
-        </div>
-      </div>
-
-      <div
-        data-aos="fade-right"
-        data-aos-delay="300"
-        data-aos-duration="1000"
-        class="text-cont"
-      >
-        <h3 style="text-align: left; margin-bottom: 30px; font-size: 2.2rem">
-          About Us
-        </h3>
-        <p>
-          We do magic with codes! Encanto Technologies is one of the most
-          vibrant and versatile companies making wonders for global clients.
-          Encanto technologies maintain the reputation of executing most complex
-          projects at ease. We take immense pride to serve all the IT, web
-          development, and software development requirements under one roof. Our
-          core team includes the world’s best brains that magically deliver the
-          desired products to meet all your custom requirements. Our developed
-          smart solutions and products are highly acknowledged around the globe.
-          Client satisfaction remains the cornerstone of Encanto Technologies
-          that motivates us to serve our prestigious clients. Our clientele
-          includes globally renowned players from various industries such as
-          healthcare, automobile, ICT, consumer electronics, food and beverages,
-          chemical, among other domains. <br /><br />
-          We take great pride in our team and the kind of process we must
-          deliver the desired products and services. We have the best brains
-          that are nurtured under a cohesive work environment. Our work culture
-          remains very sacred that helps us to remain professional and
-          competitive. We value our employees and reward them to bring
-          innovation, develop smart solutions and optimize businesses. We are
-          fortunate to have the most talented folks that deliver quality
-          projects, foster innovation, and inculcate values in our company.
-          Encanto technologies have mastered the art of executing the desired
-          products with comprehensive after-sales services. It really helped us
-          to gain the trust of our valuable clientele that keep on coming or
-          referring us to others.<br /><br />
-          Encanto technologies have a significant presence in the US, Canada,
-          Germany, UK, Korea, Japan, Thailand, India, and other GCC economies.
-          Our journey is a roller coaster ride, from a group of individuals to a
-          team of 100+ developers we have gracefully handled our success. We
-          managed to scale up to serve the global clientele with more energy and
-          zest. The sanctity of our organization and the quality work culture
-          are the result of years of discipline, perseverance, and patience. We
-          endeavor to continue serving our clients with utmost sincerity and
-          professionalism.
-        </p>
-      </div>
-
-      <!-- the old design is commented out -->
-      <!-- <div class="values-etc d-flex flex-row justify-content-center">
-        <div
-          data-aos="flip-left"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-          class="value-box vision mx-3"
-        >
-          <h3 style="color: #ff5d7d">VISION</h3>
-          <p>
-            To be the world's best and most trusted human experience design
-            company
-          </p>
-        </div>
-        <div
-          data-aos="flip-left"
-          data-aos-delay="500"
-          data-aos-duration="1000"
-          class="value-box mission mx-3"
-        >
-          <h3 style="color: #5857f9">MISSION</h3>
-          <p>To enhance and elevate human interaction</p>
-        </div>
-        <div
-          data-aos="flip-left"
-          data-aos-delay="700"
-          data-aos-duration="1000"
-          class="value-box values mx-3"
-        >
-          <h3 style="color: #9f26f3">VALUES</h3>
-          <p>To pursue excellence through dedicated teamwork</p>
-        </div>
-      </div> -->
-
-      <!-- Mission, vision and values container -->
-      <div class="mission-containerr">
-        <div
-          v-if="missionVisible == true"
-          class="
-            blank
-            d-flex
-            justify-content-center
-            align-items-center
-            flex-column
-            d-xxl-block d-xl-block d-lg-block d-md-block d-sm-block d-none
-          "
-        ></div>
-        <div class="parent1">
-          <!-- here i m implementing the mouseover vue event to make the blur backdrop visible 
-            when we hover on the content div -->
-          <div
-            @mouseover="missionVisible = true"
-            @mouseleave="missionVisible = false"
-            class="content"
-          >
-            <h2>Our Vision</h2>
-            Our vision is to disrupt the coding industry with revolutionary
-            products and services. Encanto Technologies is a group of maverick
-            coders that nurtures every coder like a soldier. Our dedicated
-            experts in R&D, endeavor to explore products in healthcare,
-            automotive, banking, and finance, among other domains to stay
-            competitive. We at Encanto infuse discipline, perseverance,
-            dedication in our team that helps them to boost their aplomb and
-            optimize their productivity. Our Mantra in bid to achieve our
-            vision-<br />
-            - Be patient, stubborn, and always have a never give up approach.<br />
-            - Explore new opportunities that help to optimize the business
-            value, ensure growth and sustainability using our core
-            competencies.<br />
-            - Delight customers, employees, and partners.<br />
-            - Global footprints to expand, scale and grow.<br />
-            - Break the shackles and orthodox corporate culture. We have the
-            most vibrant, transparent, and lucrative ecosystem compared to our
-            peers.
-          </div>
-          <!-- i had to give outer border the same text to make it behave same as the content div -->
-          <div class="outerborder1">
-            <h2>Our Vision</h2>
-            Our vision is to disrupt the coding industry with revolutionary
-            products and services. Encanto Technologies is a group of maverick
-            coders that nurtures every coder like a soldier. Our dedicated
-            experts in R&D, endeavor to explore products in healthcare,
-            automotive, banking, and finance, among other domains to stay
-            competitive. We at Encanto infuse discipline, perseverance,
-            dedication in our team that helps them to boost their aplomb and
-            optimize their productivity. Our Mantra in bid to achieve our
-            vision-<br />
-            - Be patient, stubborn, and always have a never give up approach.<br />
-            - Explore new opportunities that help to optimize the business
-            value, ensure growth and sustainability using our core
-            competencies.<br />
-            - Delight customers, employees, and partners.<br />
-            - Global footprints to expand, scale and grow.<br />
-            - Break the shackles and orthodox corporate culture. We have the
-            most vibrant, transparent, and lucrative ecosystem compared to our
-            peers.
-          </div>
-        </div>
-
-        <!-- giving 100% width to the second parent to align it to the right -->
-        <div
-          class="w-xxl-100 w-xl-100 w-lg-100 w-md-40 d-flex justify-content-end"
-        >
-          <div class="parent2">
-            <!-- here i m implementing the mouseover vue event to make the blur backdrop visible 
-            when we hover on the content div -->
-            <div
-              @mouseover="missionVisible = true"
-              @mouseleave="missionVisible = false"
-              class="content"
-            >
-              <h2>Our Mission</h2>
-              At Encanto Technologies our mission resonates with our endeavor to
-              convert the most complex problems of our clients into simpler
-              solutions. Our team of experts invests their precious time in
-              understanding the requirement of the clients. Identify the scope,
-              brainstorm, chose the best solution, implementation is the ideal
-              procedure we follow to provide the best possible solutions to a
-              global clientele.
-            </div>
-            <div class="outerborder2">
-              <h2>Our Mission</h2>
-              At Encanto Technologies our mission resonates with our endeavor to
-              convert the most complex problems of our clients into simpler
-              solutions. Our team of experts invests their precious time in
-              understanding the requirement of the clients. Identify the scope,
-              brainstorm, chose the best solution, implementation is the ideal
-              procedure we follow to provide the best possible solutions to a
-              global clientele.
-            </div>
-          </div>
-        </div>
-
-        <div class="parent3">
-          <!-- here i m implementing the mouseover vue event to make the blur backdrop visible 
-            when we hover on the content div -->
-          <div
-            @mouseover="missionVisible = true"
-            @mouseleave="missionVisible = false"
-            class="content"
-          >
-            <h2>Our Values</h2>
-            Encanto Technologies have a firm belief in equality, client
-            satisfaction, and merit. We value our clients and our team members,
-            and it reflects in our culture and deliverables. Client satisfaction
-            which is one of the cornerstones of our foundation motivates us to
-            push ourselves and make the clients delightful. At Encanto, we also
-            nurture our resources to bring their best out of them. We reward and
-            respect the young talents that deserve monetary and non-monetary
-            benefits. We don’t hesitate to offer exponential growth to deserving
-            candidates. Our values-led us to strengthen our roots within the
-            organization and around the globe.
-          </div>
-
-          <div class="outerborder3">
-            <h2>Our Values</h2>
-            Encanto Technologies have a firm belief in equality, client
-            satisfaction, and merit. We value our clients and our team members,
-            and it reflects in our culture and deliverables. Client satisfaction
-            which is one of the cornerstones of our foundation motivates us to
-            push ourselves and make the clients delightful. At Encanto, we also
-            nurture our resources to bring their best out of them. We reward and
-            respect the young talents that deserve monetary and non-monetary
-            benefits. We don’t hesitate to offer exponential growth to deserving
-            candidates. Our values-led us to strengthen our roots within the
-            organization and around the globe.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer1 />
-  <footerMarquee />
+  <newcards :content="content" />
+  
+</div>
+<footer1 />
+<footerMarquee />
 </template>
 
 <script>
+  import newcards from "@/components/services-comps/newcards.vue";
 import contactSidebar from "@/components/contactSidebar.vue";
 import socialIcons from "@/components/socialIcons.vue";
 import navbar from "@/components/navbar.vue";
@@ -312,12 +40,8 @@ export default {
     AOS.init();
   },
   name: "About",
-  data() {
-    return {
-      missionVisible: false,
-    };
-  },
   components: {
+    newcards,
     socialIcons,
     hamburger,
     footerMarquee,
@@ -326,10 +50,55 @@ export default {
     navbar,
     contactSidebar,
   },
+  data() {
+    return {
+      missionVisible: false,
+      content: [
+        {
+          heading: "Sample Prototype 1",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+          icon: "services-specific-icons/ios-spec.png",
+        },
+        {
+          heading: "Sample Prototype 2",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+          icon: "services-specific-icons/android-spec.png",
+        },
+        {
+          heading: "Sample Prototype 3",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+          icon: "services-specific-icons/flutter-spec.png",
+        },
+        {
+          heading: "Sample Prototype 4",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+          icon: "services-specific-icons/automation-spec.png",
+        },
+        {
+          heading: "Sample Prototype 5",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+          icon: "services-specific-icons/maintainence-spec.png",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped>
+h1 {
+  margin-top: 50px;
+  margin-bottom: -150px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
 .blank {
   height: 180vh;
   width: 100vw;

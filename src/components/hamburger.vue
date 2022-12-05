@@ -19,7 +19,7 @@
     <transition name="hamburger-fade">
       <div v-if="cond" class="hamburger-list">
         <router-link class="ham-list" @click="moveUp" to="/">Home</router-link>
-        <dropdown class="mx-3" id="navs" title="Services" :items="services" />
+        <!-- <dropdown class="mx-3" id="navs" title="Services" :items="services" /> -->
         <router-link class="ham-list" @click="moveUp" to="/about"
           >About</router-link
         >
@@ -28,13 +28,13 @@
         >x
         <div class="contInfo">
           <span
-            ><a href="mailto:info@encantotek.com" target="_blank"
-              ><i class="fa fa-envelope"></i>&nbsp;info@encantotek.com</a
+            ><a href="mailto:abc@example.com" target="_blank"
+              ><i class="fa fa-envelope"></i>&nbsp;abc@example.com</a
             ></span
           >
           <span
-            ><a href="tel:+91-7224896741" target="_blank"
-              ><i class="fa fa-phone"></i>+91 7224896741</a
+            ><a href="tel:+91-2352342343" target="_blank"
+              ><i class="fa fa-phone"></i>+91 XXXXXXXXXX</a
             ></span
           >
         </div>
@@ -44,10 +44,10 @@
 </template>
 
 <script>
-import dropdown from "./dropdown.vue";
+// import dropdown from "./dropdown.vue";
 
 export default {
-  components: { dropdown },
+  // components: { dropdown },
   data() {
     return {
       cond: false,

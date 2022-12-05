@@ -58,7 +58,7 @@
     :style="{ display: formActive ? 'none' : 'block' }"
   >
     <div class="sicons">
-      <p>CONTACT US</p>
+      <p>SUBMIT PROJECT</p>
     </div>
   </div>
   <transition name="formOpen">
@@ -142,9 +142,9 @@
             />
           </div>
           <div class="mb-4 d-flex">
-            <label for="message" class="form-label">Message:&nbsp;</label>
+            <label for="message" class="form-label">Description:&nbsp;</label>
             <textarea
-              placeholder="Your message"
+              placeholder="Your description"
               class="form-control"
               id="message"
               rows="2"
@@ -410,7 +410,8 @@ export default {
   height: 600px;
   margin-bottom: 0px;
   padding-bottom: -60px !important;
-  background: rgba(255, 255, 255, 0.98);
+  border-radius: 30px 0px 0px 30px;
+  background: rgba(255, 255, 255, 0.68);
   border: 2px solid rgba(0, 0, 0, 0.28);
   border-right: none;
   position: absolute;
@@ -605,6 +606,7 @@ form button:hover {
 @media (max-width: 992px) {
   .container-fluidd {
     width: 50vw;
+    background: rgba(255, 255, 255, 0.98);
   }
   .form-check label {
     padding: 3px 10px;

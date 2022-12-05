@@ -15,7 +15,7 @@
         align-items-center
       "
     >
-      <div
+      <!-- <div
         class="
           gif-cont
           d-flex
@@ -29,19 +29,19 @@
           align-items-center
         "
       >
-        <!-- this is written to give the tilt effect to image -->
-        <!-- v-tilt="{ speed: 300, perspective: 500, scale: 1.15, reverse: true }" -->
-        <div class="gif d-flex justify-content-end align-items-center">
-          <!-- binding src to use it in loop -->
-          <img
-            data-aos="zoom-in"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            :src="image"
-            alt="technology image"
-          />
-        </div>
+      <div class="gif d-flex justify-content-end align-items-center">
+        <img
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        :src="image"
+        alt="technology image"
+        />
       </div>
+    </div> -->
+    <!-- binding src to use it in loop -->
+    <!-- v-tilt="{ speed: 300, perspective: 500, scale: 1.15, reverse: true }" -->
+        <!-- this is written to give the tilt effect to image -->
       <div
         class="
           heading

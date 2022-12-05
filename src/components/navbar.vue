@@ -8,47 +8,52 @@
       <!-- moveup method is used to move to the top on the page we are going to-->
       <router-link class="me-5" @click="moveUp" to="/">
         <img
-          style="height: 60px !important"
-          src="../../public/logo.webp"
+          style="height: 45px !important"
+          src="../../public/logo.png"
           alt="logo"
         />
       </router-link>
 
       <!-- text after the logo -->
-      <!-- <h1>
-        <router-link @click="moveUp" to="/"> ENCANTO </router-link>
-      </h1> -->
+      <h1>
+        <router-link @click="moveUp" to="/"> DEVSPOT </router-link>
+      </h1>
     </div>
 
     <!-- all pages menu -->
     <div id="navs" class="d-flex align-items-center">
       <router-link class="mx-3" @click="moveUp()" to="/">Home</router-link>
-      <dropdown class="mx-3" title="Services" :items="services" />
+      <!-- <dropdown class="mx-3" title="Services" :items="services" /> -->
       <router-link class="mx-3" @click="moveUp()" to="/about"
-        >About</router-link
+        >Prototypes</router-link
       >
       <router-link class="mx-3" @click="moveUp()" to="/contact"
-        >Contact</router-link
+        >Projects</router-link
       >
+      <div class="login">
+        <login />
+      </div>
     </div>
 
-    <div class="contInfo">
+
+    <!-- <div class="contInfo">
       <span
-        ><a href="mailto:info@encantotek.com" target="_blank"
-          ><i class="fa fa-envelope"></i>&nbsp;info@encantotek.com</a
+        ><a href="mailto:abc@example.com" target="_blank"
+          ><i class="fa fa-envelope"></i>&nbsp;abc@example.com</a
         ></span
       >
       <span
-        ><a href="tel:+91-7224896741" target="_blank"
-          ><i class="fa fa-phone"></i>&nbsp;+91 7224896741</a
+        ><a href="tel:+91-353453534" target="_blank"
+          ><i class="fa fa-phone"></i>&nbsp;+91 XXXXXXXXXX</a
         ></span
       >
-    </div>
+    </div> -->
   </div>
 </template>
 
   <script>
-import dropdown from "@/components/dropdown.vue";
+import login from "@/components/login.vue";
+// import dropdown from "@/components/dropdown.vue";
 export default {
   methods: {
     // moveup method is used to move to the top on the page we are going to
@@ -57,7 +62,7 @@ export default {
     },
   },
   name: "navbar",
-  components: { dropdown },
+  components: { login },
   data() {
     return {
       // from here we will be sending the data to dropdown component
@@ -149,6 +154,15 @@ export default {
   margin-left: 5vw;
   height: 60px !important;
   justify-content: center;
+  letter-spacing: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logotext h1 a{
+  color: white !important;
+  text-decoration: none !important;
+  margin-top: 10px;
+  transform: scale(0.8);
 }
 
 img {
@@ -186,7 +200,7 @@ img {
 
 @media (max-width: 992px) {
   #logotext img {
-    margin: 0 0 0 -40px;
+    margin: 0 0 0 -20px;
   }
   #logotext h1 a {
     margin: 0 0 0 0px;

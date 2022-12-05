@@ -50,7 +50,7 @@
     </div>
   </transition>
 
-  <h1>Contact us</h1>
+  <h1>Submit Project</h1>
   <div class="container-fluid d-flex justify-content-center form">
     <!-- that arrow image -->
     <div class="bg-image">
@@ -110,9 +110,9 @@
         />
       </div>
       <div class="mb-4 d-flex">
-        <label for="message" class="form-label">Message:&nbsp;</label>
+        <label for="message" class="form-label">Description:&nbsp;</label>
         <textarea
-          placeholder="Your message"
+          placeholder="Your description"
           class="form-control"
           id="message"
           rows="2"

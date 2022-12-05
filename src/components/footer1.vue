@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="top_header">
+    <!-- <div class="top_header">
       <section>
         <span><i class="fa fa-map-marker"></i></span>
         <span
@@ -8,16 +8,15 @@
             style="width: 30px !important"
             target="_blank"
             href="https://www.google.com/maps/place/Orion+Market+Research+Pvt+Ltd./@22.7251267,75.8828506,15z/data=!4m5!3m4!1s0x0:0xc4aee691c60209f5!8m2!3d22.725122!4d75.8828319"
-            >Commerce House, 305-308, Janjeerwala Square, Indore, Madhya Pradesh
-            452001</a
+            >ADDRESS</a
           ></span
         >
       </section>
       <section>
         <span><i class="fa fa-envelope"></i></span>
         <span
-          ><a target="_blank" href="mailto:info@encantotek.com"
-            >info@encantotek.com</a
+          ><a target="_blank" href="mailto:abc@example.com"
+            >abc@example.com</a
           ></span
         >
       </section>
@@ -26,20 +25,20 @@
         <span
           ><a
             target="_blank"
-            href="tel:+91-7224896741"
-            >+91 7224896741</a
+            href="tel:+91-241242342"
+            >+91 XXXXXXXXXX</a
           ></span
         >
       </section>
-    </div>
-    <span class="border-shape"></span>
+    </div> -->
     <div class="bottom_content">
       <section class="d-flex justify-content-sm-center">
-        <a href="https://twitter.com/EncantoTechnol1" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.facebook.com/EncantoTek-113001977956384/" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://instagram.com/encantotech?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
         <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
       </section>
+    <span class="border-shape"></span>
       <section class="d-flex justify-content-sm-center">
         <router-link class="ham-list" to="/">Home</router-link>
         <router-link class="ham-list" to="/about">About</router-link>
@@ -47,7 +46,7 @@
       </section>
     </div>
     <div class="copyright">
-      Copyright © 2022 Encanto Technologies- All rights reserved
+      Made with ❤️ by team - Binary Brains
     </div>
   </footer>
 </template>
@@ -199,7 +198,7 @@ footer .bottom_content section {
   background-color: #1e1e1e;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .fa-map-marker {

@@ -6,11 +6,11 @@
   <mainhead
     image="services-main-image/devops-gif-final.webp"
     headingtext="DevOps & CI/CD"
-    quote="Our value driven DevOps & CI/CD practices ensures perennial support to optimize your business"
+    quote="tagline"
   />
   <whatisthis
     technology="DevOps & CI/CD"
-    techdetail="CI/CD presents ongoing automation and continuous monitoring through the lifecycle of apps, from integration and testing process to delivery and deployment. Our DevOps engineers are highly skilled in developing and automating the deployment process as code gets committed. Encanto Technologies offers value-driven DevOps services and solutions to global clientele by leveraging its offering in digital, and product engineering, among other services. We are equipped with the best-in-class DevOps practices and processes to optimize business processes, produce better quality code, and deliver value to our clients."
+    techdetail="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
   />
   <newcards :content="content" />
 
@@ -55,31 +55,31 @@ export default {
         {
           heading: "DevOps Consulting Services",
           description:
-            "Our DevOps Consulting Services are gaining momentum around the globe since it leverages monitoring, tool-chain pipelines, collaboration, automation, and cloud adoption. We ensure significant on-boarding of applications by automating the end-to-end delivery pipeline and boosting continuous integration and development across leading cloud platforms. At Encanto Technologies, we automate the end-to-end delivery pipeline for higher cost and time efficiency. Our DevOps solutions enable organizations to design high-quality software-based products and services.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
           icon: "services-specific-icons/devops-consulting-services.png"
         },
         {
           heading: "Jenkin Implementation",
           description:
-            "Jenkins is an open-source server that is written entirely in Java that executes a series of actions to achieve the continuous integration process, that too in an automated fashion. It facilitates Continuous Integration and Delivery in software projects by automating parts related to building, testing, and deploying. This makes it easy for developers to continuously work on improving products by integrating changes to the project.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
           icon: "services-specific-icons/jenkin-spec.png"
         },
         {
           heading: "AWS DevOps Services",
           description:
-            " Our AWS DevOps Services support various DevOps principles and practices that help to improve your business agility. It allows you to automate the development cycle with enhanced infrastructure provisioning coupled with the management of every complex environment at scale. AWS helps to build, test and deploy the application without major challenges throughout AWS's continuous integration and continuous delivery pipeline.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
           icon: "services-specific-icons/aws-devops-spec.png"
         },
         {
           heading: "DevOps Automation Services",
           description:
-            " Automating DevOps help to improve the quality and expedite the production of software. Encanto Technologies offers you a wide range of automating DevOps services without any complexity. Automation is increasingly adopted around the globe since it helps optimize the production and distribution of a product. Our experts in DevOps automation services help the organizations to build quality software that creates a lasting impression, and also increases productivity of businesses.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
           icon: "services-specific-icons/automation-services-spec.png"
         },
         {
           heading: "CI/CD Implementation",
           description:
-            "Continuous Integration and Continuous Deployment embody a culture, set of operating principles, and collective practices that enable the application development teams to execute code changes more frequently and conveniently. We have a reputation for maintaining efficiency and finesse in CI/CD implementation. We at Encanto Technologies value your time and provide you with top-class integration in CI/CD.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
           icon: "services-specific-icons/cicd-implementation.png"
         },
       ],

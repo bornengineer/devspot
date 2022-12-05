@@ -14,7 +14,7 @@
   >
     <div class="start d-flex flex-column align-items-center">
       <h3 data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-        WHO WE ARE
+        Why you need
       </h3>
       <br />
       <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
@@ -37,7 +37,7 @@
             height: 100% !important;
             margin-top: -80px;
           "
-          src="../assets/final-who-we-comp.webp"
+          src="../assets/final-who-we-comp.gif"
           alt="gif"
         />
       </div>
@@ -59,9 +59,9 @@ export default {
   data() {
     return {
       whoWeAreContent1:
-        "We are a client-centric organization, committed to relentlessly working for the betterment of our clientele from around the globe. Our expertise in Web development, Mobile Application development, among other services attracted client’s from around the globe. Client satisfaction remains our top priority and a cornerstone of our company values. We are among the top companies with the highest retention rates that distinguish us from other competitors. We strongly believe in the philosophy of making our customers happy. It rewarded us big time and encouraged us to serve our clientele more profoundly. Team Encanto Technologies has managed to bloom against all odds owing to the persistent efforts and dedication of our core team endeavoring the best deliverables to global clients.",
+        "",
       whoWeAreContent2:
-        "Encanto Technologies serves clients with the best Web Development, Mobile Application Development, among other services. We not only do magic with codes but also serve the best post-sale customer services. We don’t leave our clients in the lurch as our team gets rid of even the most complex issues at lightning speed. We have a dedicated team of experienced developers for resolving bugs, post-sale custom requirements, quick fixes, and pushing new changes, among other services. Timely resolving client queries helped a lot in gaining clients’ trust and new references. We believe in creating a lasting impression with a firm belief in the “you grow, we grow” philosophy. We Code, We Value Clients, We Do Wonder; as simple as that.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     };
   },
   created() {
@@ -73,7 +73,7 @@ export default {
 <style scoped>
 .containerr {
   width: 100vw;
-  margin-bottom: -50px;
+  margin-bottom: -150px;
 }
 .gif {
   width: 50vw;

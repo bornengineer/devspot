@@ -1,6 +1,6 @@
 <template>
   <div id="bottomMarquee">
-    <marquee><p>5765  437265617465  4d61676963  77697468  636f6465</p></marquee>
+    <marquee><p>Devspot for everyone</p></marquee>
   </div>
 </template>
 

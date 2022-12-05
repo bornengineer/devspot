@@ -17,7 +17,7 @@
         align-items-center
       "
     >
-      <div
+      <!-- <div
         data-aos="zoom-in"
         data-aos-delay="100"
         data-aos-duration="1000"
@@ -26,8 +26,8 @@
         <h1>
           One Stop Solution for Mobile App Development and Web Development.
         </h1>
-        <img style="width: auto" src="../assets/maingiffinal.webp" />
-      </div>
+        <img style="width: auto" src="../assets/maingiffinal.gif" />
+      </div> -->
       <div
         data-aos="fade-up"
         data-aos-delay="100"
@@ -41,9 +41,9 @@
           text-center
         "
       >
-        <div id="idea" class="my-2 ideacode">IDEA</div>
+        <div id="idea" class="my-2 ideacode">PROBLEM</div>
         <div id="code" class="my-2 ideacode">CODE</div>
-        <div id="reality" class="my-2 ideacode">REALITY</div>
+        <div id="reality" class="my-2 ideacode">SOLUTION</div>
         <div class="fixed-animation">
           <div class="dotbox1">
             <div class="dot1"></div>
@@ -53,7 +53,7 @@
           </div>
         </div>
 
-        <p class="my-2">We Create Magic With Code</p>
+        <p class="my-2">for clients & devs</p>
       </div>
     </div>
   </div>
@@ -586,8 +586,8 @@ img {
 }
 .heading .ideacode {
   font-weight: 700;
-  font-size: 70px;
-  margin: 0px 0px !important;
+  font-size: 50px;
+  margin: 15px 0px !important;
 }
 p {
   color: #0947a3;

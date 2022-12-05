@@ -7,7 +7,7 @@
   <hamburger />
   <mainCompUpdated />
   <whoWeAre />
-  <servicesUpdated></servicesUpdated>
+  <!-- <servicesUpdated></servicesUpdated> -->
   <domains padding="100px"/>
   <whatClientsSay />
   <footer1 />
@@ -17,7 +17,7 @@
 
 <script>
 // @ is an alias to /src
-import servicesUpdated from "@/components/servicesUpdated.vue";
+// import servicesUpdated from "@/components/servicesUpdated.vue";
 import footerMarquee from "@/components/footerMarquee.vue";
 import mainCompUpdated from "@/components/mainCompUpdated.vue";
 import hamburger from "@/components/hamburger.vue";
@@ -37,7 +37,7 @@ export default {
     footerMarquee,
     hamburger,
     particles,
-    servicesUpdated,
+    // servicesUpdated,
     footer1,
     mainCompUpdated,
     whoWeAre,
@@ -62,7 +62,7 @@ export default {
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #ffdb5a, #ffdb5a) fixed;
+  background: linear-gradient(180deg, #cbcbc7, #6e6e6c) fixed;
   box-sizing: border-box;
   overflow-x: hidden !important;
   font-family: Regular !important;

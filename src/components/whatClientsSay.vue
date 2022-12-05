@@ -224,7 +224,7 @@ export default {
         designation: "Music Director",
         rating:
           "https://www.pngall.com/wp-content/uploads/4/5-Star-Rating-PNG-File.png",
-        text: "My friend from the e-commerce domain was delighted by the deliverables of Encanto Technologies. I was motivated by him to get associated with this agency. To be honest I made a correct decision to trust on Encanto Technologies. A perfect one-stop shop, with best pre and post-sale services. These guys are amazing, they handle everything you throw at them.",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
       },
       user2: {
         image: "https://cdn1.iconfinder.com/data/icons/photography-2/512/YPS__human_avatar_portrait_photography_picture_photo-512.png",
@@ -232,7 +232,7 @@ export default {
         designation: "Manager-Global Sales",
         rating:
           "https://www.pngall.com/wp-content/uploads/4/5-Star-Rating-PNG-File.png",
-        text: "Encanto Technologies saved us big time. In emergency we requested to expedite the development process to help us launch the site preponed due to unforeseen reasons. The team relentlessly worked to support us in our predicament. The experience was fantastic, their team was responsive, smart, and cooperative. Their experienced and dedicated team helped us a lot in our journey.",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
       },
       user3: {
         image: "https://cdn1.iconfinder.com/data/icons/photography-2/512/YPS__human_avatar_portrait_photography_picture_photo-512.png",
@@ -240,7 +240,7 @@ export default {
         designation: "CMO",
         rating:
           "https://www.pngall.com/wp-content/uploads/4/5-Star-Rating-PNG-File.png",
-        text: "First thing first, this team deserves appreciation in meeting deadline.  I never had to ask about update on milestones. They send regular updates and quick resolution to all queries.",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
       },
     };
   },

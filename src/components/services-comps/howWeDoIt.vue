@@ -296,35 +296,35 @@ export default {
           image: "services-how-we-do-it/requirement-analysis.png",
           title: "Requirement Analysis",
           description:
-            "Encanto Technologies takes great pride in the meticulous process of requirement analysis. Our experts are very thorough and professional in gathering the correct requirement, remove ambiguity, clarity, and documentation as the prerequisite to moving forward for any project. Good product delivery is the forte that distinguishes us from other companies. We have invested our time, effort, and money in making the requirement analysis process smooth and effective.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
           dir: "forward",
         },
         {
           image: "services-how-we-do-it/design-docu.png",
           title: "Design Document & Prototype",
           description:
-            "Prototyping is termed as the process of developing a working imitation of a product or system that must be critically engineered. We have a smooth process of designing documents and prototyping. It provides a small-scale replica of the product or system which can be used for obtaining customer feedback/thoughts.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
           dir: "reverse",
         },
         {
           image: "services-how-we-do-it/development.png",
           title: "Development",
           description:
-            "Development refers to the actual writing of the program. From a small project executed by a single engineer to a large and complex project written and worked by several teams, defines development. We use an Access Control or Source Code Management application for this type of phase. These systems enable developers to track changes to the code. It also ensures compatibility between different team projects and makes sure target goals are achieved.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
           dir: "forward",
         },
         {
           image: "services-how-we-do-it/identify-defective.png",
           title: "Identify Defects & Resolve Bugs",
           description:
-            " We are very meticulous in identifying defects and quick resolution to bugs. Bugs and defects can cause massive losses to the companies, quick resolution, and quick turnaround can save millions of dollars. We have a detailed process while developing any product anticipating different types of defects or bugs. These defects are critically analyzed, identified, and resolved instantly throughout the development process.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
           dir: "reverse",
         },
         {
           image: "services-how-we-do-it/technical-support.png",
           title: "Production & Technical Support",
           description:
-            "At Encanto Technologies, we strive to provide our clients with the best technical and production support on all our products and services. We have experts for various domains solving issues in almost every aspect related to the software development lifecycle, to ensure the quality and timely delivery of work. For the smooth operation of your business, we at Encanto have a 24*7 technical support team who are dedicated to providing quick service to clients.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
           dir: "forward",
           last: true,
         },
@@ -399,7 +399,7 @@ hr {
   z-index: -10;
   position: absolute;
   font-weight: 900;
-  color: #0947a31f;
+  color: #282b301f;
   font-family: "Helvetica";
 }
 
@@ -459,7 +459,7 @@ hr {
   font-weight: 500;
   width: 65%;
   margin-bottom: 0 !important;
-  color: #0947a3c5;
+  color: #000000c5;
 }
 .cardd h3 {
   width: 200px;

@@ -287,7 +287,7 @@ svg {
 }
 
 #navs1:hover {
-  background-color: #ffdb5a;
+  background-color: #c2c0bd;
   border: 2px solid rgba(27, 27, 27, 0.7);
 }
 #navs1:hover img {

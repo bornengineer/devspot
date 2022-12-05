@@ -16,7 +16,7 @@
       data-aos-duration="600"
       class="text-center"
     >
-      DOMAINS WE HAVE WORKED FOR
+      DOMAINS
     </h4>
     <div class="domains d-flex flex-wrap justify-content-center">
       <span

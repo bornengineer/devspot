@@ -4,13 +4,13 @@
     <div class="sicons">
       <ul>
         <li>
-          <a href="https://twitter.com/EncantoTechnol1" target="_blank">
+          <a href="https://twitter.com/" target="_blank">
             <i class="fab fa-twitter-square"></i>
           </a>
         </li>
         <li>
           <a
-            href="https://www.facebook.com/EncantoTek-113001977956384/"
+            href="https://www.facebook.com/"
             target="_blank"
           >
             <i class="fab fa-facebook-square"></i>
@@ -18,7 +18,7 @@
         </li>
         <li>
           <a
-            href="https://instagram.com/encantotech?utm_medium=copy_link"
+            href="https://instagram.com/"
             target="_blank"
           >
             <i class="fab fa-instagram-square"></i>

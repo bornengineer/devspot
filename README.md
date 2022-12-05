@@ -1,4 +1,4 @@
-# ENCANTO
+# DEVSPOT
 
 ## Project setup / Install dependencies
 install all the dependencies as in package.json
