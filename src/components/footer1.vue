@@ -46,7 +46,7 @@
       </section>
     </div>
     <div class="copyright">
-      Made with ❤️ by team - Binary Brains
+      Amaan & Subhashis - Guided by Vivek Gupta Sir
     </div>
   </footer>
 </template>

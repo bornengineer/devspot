@@ -24,17 +24,19 @@
     <div id="navs" class="d-flex align-items-center">
       <router-link class="mx-3" @click="moveUp()" to="/">Home</router-link>
       <!-- <dropdown class="mx-3" title="Services" :items="services" /> -->
-      <router-link class="mx-3" @click="moveUp()" to="/about"
+      <router-link class="mx-3" @click="moveUp()" to="/prototypes"
         >Prototypes</router-link
       >
-      <router-link class="mx-3" @click="moveUp()" to="/contact"
+      <router-link class="mx-3" @click="moveUp()" to="/submit-project"
         >Projects</router-link
+      >
+      <router-link class="mx-3" @click="moveUp()" to="/users"
+        >Users</router-link
       >
       <div class="login">
         <login />
       </div>
     </div>
-
 
     <!-- <div class="contInfo">
       <span
@@ -65,6 +67,17 @@ export default {
   components: { login },
   data() {
     return {
+      firstname: "",
+      lastname: "",
+      email: "",
+      dob: "",
+      city: "",
+      country: "",
+      postcode: "",
+      gender: "",
+      phone: "",
+      image: "",
+
       // from here we will be sending the data to dropdown component
       services: [
         {
@@ -155,14 +168,14 @@ export default {
   height: 60px !important;
   justify-content: center;
   letter-spacing: 5px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#logotext h1 a{
+#logotext h1 a {
   color: white !important;
   text-decoration: none !important;
-  margin-top: 10px;
-  transform: scale(0.8);
+  margin-left: -50px !important;
+  transform: scale(0.6);
 }
 
 img {
